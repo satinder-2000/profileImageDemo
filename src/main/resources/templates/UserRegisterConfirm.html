@@ -46,7 +46,8 @@
 			<div class="row col-sm-12">
 				<div class="col-sm-3">
 					<p class="text-center">
-						<img alt="" src="@{/ProfileImageServlet?imageId=*{profileImageId})}" width="100" style="border-radius: 50%;">
+						<!-- img alt="" src="@{/ProfileImageServlet?imageId=*{profileImageId})}" width="100" style="border-radius: 50%;" -->
+						<img alt="" th:src="@{/ProfileImageServlet(imageId=${userDto.profileImageId})}" width="100" style="border-radius: 50%;">
 					</p>
 				</div>
 				<div class="col-sm-8">
